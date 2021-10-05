@@ -1,0 +1,402 @@
+﻿"1" "服务器管理设置"
+{
+   "0" "设置OP密码" "messagemode rcon_password"
+   "1" "1秒后刷新" "sv_restartround 1; rcon sv_restartround 1"
+   "2" "刷新三次" "exec r3.cfg"
+   "3" "重新建立此地图"
+       {
+                "1" "关闭" ""
+		"2" "确定" "restart; rcon restart"
+       }
+   "4" "列出所有玩家信息" "status;toggleconsole;console 1"
+   "5" "踢除玩家" "messagemode kick"
+   "6" "自动踢除不动的玩家"
+	{
+		"1" "开启（以及友军杀手）" "mp_autokick 1;rcon mp_autokick 1"
+		"2" "关闭" "mp_autokick 0;rcon mp_autokick 0"
+	}
+   "7" "服务器密码"
+{        "1" "设置服务器密码" "messagemode sv_password"
+         "2" "查看服务器密码" "sv_password ; rcon sv_password "
+}
+   "8" "设置服务器名称" "messagemode hostname"
+   "9" "玩家喷图间隔时间"
+		{
+		"1" "0秒" "decalfrequency 0;rcon decalfrequency 0"
+		"2" "10秒" "decalfrequency 10;rcon decalfrequency 10"
+		"3" "20秒" "decalfrequency 20;rcon decalfrequency 20"
+		"4" "30秒" "decalfrequency 30;rcon decalfrequency 30"
+                "5" "自定义数值" "messagemode decalfrequency"
+		}
+
+        "10" "观察者"
+	{
+		"1" "允许" "allow_spectators 1; rcon allow_spectators 1"
+		"2" "禁止" "allow_spectators 0; rcon allow_spectators 0"
+	}
+
+	"11" "玩家暂停"
+	{
+		"1" "允许" "pausable 1; rcon pausable 1"
+		"2" "禁止" "pausable 0; rcon pausable 0"
+	}
+} 
+
+"2" "服务器游戏性设置"
+{
+   "0" "时间设置"
+	{
+		"1" "地图最大时间"
+		{
+		"1" "30分钟" "mp_timelimit 30;rcon mp_timelimit 30"
+		"2" "60分钟" "mp_timelimit 60;rcon mp_timelimit 60"
+		"3" "90分钟" "mp_timelimit 90;rcon mp_timelimit 90"
+		"4" "无限时" "mp_timelimit 0;rcon mp_timelimit 0"
+                "5" "自定义数值" "messagemode mp_timelimit"
+		}
+
+		"2" "回合时限"
+		{
+		"1" "1分钟" "mp_roundtime 1;rcon mp_roundtime 1"
+		"2" "2分钟" "mp_roundtime 2;rcon mp_roundtime 2"
+		"3" "3分钟" "mp_roundtime 3;rcon mp_roundtime 3"
+                "4" "自定义数值" "messagemode mp_roundtime"
+              
+		}
+
+		"3" "冻结时间"
+		{
+		"1" "0秒" "mp_freezetime 0;rcon mp_freezetime 0"
+		"2" "1秒" "mp_freezetime 1;rcon mp_freezetime 1"
+		"3" "2秒" "mp_freezetime 2;rcon mp_freezetime 2"
+		"4" "3秒" "mp_freezetime 3;rcon mp_freezetime 3"
+                "5" "自定义数值" "messagemode mp_freezetime"
+               
+		}
+
+		"4" "购买时限"
+		{
+		"1" "15秒" "mp_buytime 0.25;rcon mp_buytime 0.25"
+		"2" "30秒" "mp_buytime 0.5;rcon mp_buytime 0.5"
+		"3" "1分钟" "mp_buytime 1;rcon mp_buytime 1"
+		"4" "3分钟" "mp_buytime 3;rcon mp_buytime 3"
+		"5" "自定义数值" "messagemode mp_buytime"
+               
+		}
+
+		"5" "C4爆炸倒计时间"
+		{
+		"1" "35秒" "mp_c4timer 35;rcon mp_c4timer 35"
+		"2" "45秒" "mp_c4timer 45;rcon mp_c4timer 45"
+		"3" "自定义数值" "messagemode mp_c4timer"
+		}
+}   
+  "1" "初始金钱"
+{
+		"1" "$800" "mp_startmoney 800;rcon mp_startmoney 800"
+		"2" "$16000" "mp_startmoney 16000;rcon mp_startmoney 16000"
+                "3" "自定义数值" "messagemode mp_startmoney"
+}
+   "2" "队伍自动平衡"
+{
+		"1" "开启" "mp_autoteambalance 1;mp_limitteams 1;rcon mp_autoteambalance 1;rcon mp_limitteams 1"
+		"2" "关闭" "mp_autoteambalance 0;mp_limitteams 50;rcon mp_autoteambalance 0;rcon mp_limitteams 50"
+}
+   "3" "观察视角"
+{
+		"1" "自由观察" "mp_forcecamera 0;rcon mp_forcecamera 0"
+		"2" "队友视角" "mp_forcecamera 1;rcon mp_forcecamera 1"
+		"3" "队友第一视角" "mp_forcecamera 2;rcon mp_forcecamera 2"
+}
+   "4" "死亡黑屏"
+	{
+		"1" "开启" "mp_fadetoblack 1;rcon mp_fadetoblack 1"
+		"2" "关闭" "mp_fadetoblack 0;rcon mp_fadetoblack 0"
+	}
+   "5" "队友伤害"
+		{
+		"1" "开启" "mp_friendlyfire 1;rcon mp_friendlyfire 1"
+		"2" "关闭" "mp_friendlyfire 0;rcon mp_friendlyfire 0"
+		}
+   "6" "惩罚友军杀手"
+	{
+		"1" "开启" "mp_tkpunish 1;rcon mp_tkpunish 1"
+		"2" "关闭" "mp_tkpunish 0;rcon mp_tkpunish 0"
+	}
+   "7" "脚步声"
+	{
+		"1" "开启" "mp_footsteps 1;rcon mp_footsteps 1"
+		"2" "关闭" "mp_footsteps 0;rcon mp_footsteps 0"
+	}
+   "8" "战术手电"
+	{
+		"1" "允许" "mp_flashlight 1;rcon mp_flashlight 1"
+		"2" "禁止" "mp_flashlight 0;rcon mp_flashlight 0"
+	}
+   "9" "地心引力"
+	{
+		"1" "正常" "sv_gravity 800;rcon sv_gravity 800"
+		"2" "轻盈" "sv_gravity 80;rcon sv_gravity 80"
+		"3" "超重" "sv_gravity 2000;rcon sv_gravity 2000"
+		"4" "失重" "sv_gravity 0;rcon sv_gravity 0"
+                "5" "自定义数值" "messagemode sv_gravity"
+	}
+   
+   "10" "语音通话设置"
+	{
+		"1" "团队语音" "sv_alltalk 0;rcon sv_alltalk 0"
+		"2" "全局语音" "sv_alltalk 1;rcon sv_alltalk 1"
+	}
+}
+"3" "机器人ZBOT菜单"
+{
+    "1" "BOT级别"
+     {
+               "1" "专家"		"bot_difficulty 3;bot_kick" 
+               "2" "困难"		"bot_difficulty 2;bot_kick" 
+               "3" "普通"		"bot_difficulty 1;bot_kick" 
+               "4" "简单"		"bot_difficulty 0;bot_kick" 
+     }
+    "2" "添加BOT"
+	{
+ 	 "1" "快速添加一名BOT" "bot_add"
+  	 "2" "输入数目增减BOT" "messagemode bot_quota"
+ 	 "3" "加入一名BOT在反恐精英" "bot_add_ct"
+ 	 "4" "加入一名BOT在恐怖份子" "bot_add_t"
+ 	 "5" "设置BOT加入队伍"
+ 	 {
+  	 "1" "BOT仅加入反恐精英" "bot_join_team ct"
+  	 "2" "BOT仅加入恐怖分子" "bot_join_team t"
+ 	 "3" "可加入任何队伍" "bot_join_team any"
+ 	 }
+	}
+    "3" "杀死BOT"
+ 	 {
+ 	  "1" "杀死全部的BOT" "bot_kill"
+ 	  "2" "杀死(输入名字)" "messagemode bot_kill"
+ 	  }
+    "4" "踢除BOT"
+ 	 {
+ 	  "1" "踢除全部的BOT" "bot_kick"
+ 	  "2" "踢除(输入名字)" "messagemode bot_kick"
+  	}     
+   "5" "设置BOT名字前缀" "messagemode bot_prefix"
+   "6" "武器选择"
+	{ "0" "禁用武器"
+ 	 {
+          "0" "防暴盾"
+	   {
+   	  "1" "禁用" "bot_allow_shield 0"
+  	  "2" "允许" "bot_allow_shield 1"
+  	 }
+ 	  "1" "手枪"
+ 	  {
+   	 "1" "禁用" "bot_allow_pistols 0"
+  	  "2" "允许" "bot_allow_pistols 1"
+ 	  }
+ 	  "2" "霰弹枪"
+ 	  {
+	    "1" "禁用" "bot_allow_shotguns 0"
+ 	   "2" "允许" "bot_allow_shotguns 1"
+ 	  }
+ 	  "3" "冲锋枪"
+ 	  {
+ 	   "1" "禁用" "bot_allow_sub_machine_guns 0"
+ 	   "2" "允许" "bot_allow_sub_machine_guns 1"
+  	 }
+ 	  "4" "突击步枪"
+ 	  {
+ 	   "1" "禁用" "bot_allow_rifles 0"
+ 	   "2" "允许" "bot_allow_rifles 1"
+ 	  }
+ 	  "5" "狙击枪"
+ 	  {
+ 	   "1" "禁用" "bot_allow_snipers 0"
+ 	   "2" "允许" "bot_allow_snipers 1"
+  	 }
+  	 "6" "重机枪"
+ 	  {
+  	  "1" "禁用" "bot_allow_machine_guns 0"
+ 	   "2" "允许" "bot_allow_machine_guns 1"
+ 	  }
+ 	  "7" "手雷"
+	   {
+ 	   "1" "禁用" "bot_allow_grenades 0"
+ 	   "2" "允许" "bot_allow_grenades 1"
+ 	  }
+ 	 }
+ 	   "1" "仅用匕首" "bot_knives_only"
+	   "2" "仅用手枪" "bot_pistols_only"
+  	   "3" "仅用狙击" "bot_snipers_only"
+   	   "4" "所有武器" "bot_all_weapons"
+}
+    "7" "暂停活动"
+ 	 {
+  	 "1" "开启" "bot_stop 1"
+ 	 "2" "关闭" "bot_stop 0"
+ 	 }
+    "8" "保持静走"
+ 	 {
+  	 "1" "开启" "bot_walk 1"
+ 	 "2" "关闭" "bot_walk 0"
+ 	 } 
+    "9" "BOT语音设置"
+  	{       
+                        "1" "关闭Bot聊天语音" "bot_chatter off"
+		        "2" "Bot语音模式" 
+                         {   
+                         "1" "标准无线电" "bot_chatter Radio"
+			 "2" "普通"      "bot_chatter Normal"
+                         "3" "最小"      "bot_chatter Minimal"
+                         }
+		}
+     "10" "禁止BOT在无玩家时加入"
+		{
+			"1" "开启" "bot_join_after_player 1;rcon bot_join_after_player 1"
+			"2" "关闭" "bot_join_after_player 0;rcon bot_join_after_player 0"
+		}
+}
+    
+"4" "图形设置"
+{
+       "1" "准星设置"
+         {
+        "1" "更换准心颜色" "adjust_crosshair"  
+        "2" "准心大小"
+        {
+        "1" "小准星" "cl_crosshair_size small"
+        "2" "中等" "cl_crosshair_size Medium"
+        "3" "大准星" "cl_crosshair_size Large"
+        "4" "自动" "cl_crosshair_size auto"
+        }
+	"3" "动态准星设置"
+	{
+		"1" "开启" "cl_dynamiccrosshair 1"
+		"2" "关闭" "cl_dynamiccrosshair 0"
+        }
+        "4" "半透明准心"
+		      {
+			"1" "开启" "cl_crosshair_translucent 1"
+			"2" "关闭" "cl_crosshair_translucent 0"
+      }
+      }
+       "2" "持枪方式"
+	{
+	"1" "左手持枪" "cl_righthand 0;"
+	"2" "右手持枪" "cl_righthand 1;"
+	}
+
+       "3" "雷达设置"
+        {
+	"1" "开启雷达"  "drawradar"
+	"2" "隐藏雷达" "hideradar" 
+	"3" "实心雷达" "cl_radartype 1"      
+	"4" "透明雷达" "cl_radartype 0"
+        }
+
+        "4" "烟雾弹效果"
+	{
+		"1" "最佳"	"fastsprites 0"
+		"2" "普通"	"fastsprites 1"
+		"3" "最差"	"fastsprites 2"
+	}
+	"5" "人物阴影"
+	{
+		"1" "开启"	"cl_shadows 1"
+		"2" "关闭"	"cl_shadows 0"
+	}
+
+        "6" "天气效果"
+	{
+		"1" "开启" "cl_weather 1"
+		"2" "关闭" "cl_weather 0"
+	}
+        "7" "玩家ID居中"
+	        {
+		"1" "开启" "hud_centerid 1"
+	        "2" "关闭" "hud_centerid 0"
+         	}
+
+        "8" "net_graph显示"
+	{
+	"1" "模式"
+	{          
+		"1" "不显示" "net_graph 0"
+		"2" "简单显示模式" "net_graph 1"
+		"3" "全部显示模式" "net_graph 2"
+		"4" "最简显示模式" "net_graph 3"
+	}
+
+	"2" "位置"
+	{
+		"1" "屏幕左下" "net_graphpos 3"
+		"2" "屏幕中下" "net_graphpos 2"
+		"3" "屏幕右下" "net_graphpos 1"
+	}
+}
+        "9" "FPS显示设定"
+	        {
+		"1" "显示" "cl_showfps 1"
+		"2" "不显示" "cl_showfps 0"
+         	}
+        "10" "购买菜单类型"
+		{
+			"1" "图形菜单" "setinfo _vgui_menus 1"
+			"2" "文字菜单" "setinfo _vgui_menus 0"
+		}	
+}
+"5" "个人设置"
+{
+     "1" "一键换枪"
+                 {
+	"1" "开启" "hud_fastswitch 1"
+	"2" "关闭" "hud_fastswitch 0"
+                  }
+     "2" "自动换出捡到的武器"
+	{
+ 	 "1" "开启" "_cl_autowepswitch 1"
+ 	 "2" "关闭" "_cl_autowepswitch 0"
+	}
+    "3" "更改游戏ID" "messagemode name"
+    "4" "设置鼠标灵敏度" "messagemode sensitivity"
+    "5" "设置狙击镜鼠标灵敏度" "messagemode zoom_sensitivity_ratio"
+    "6" "设置FPS最大值"
+	{
+		"1" "FPS 100"	"fps_max 100"
+		"2" "FPS 75"	"fps_max 75"
+		"3" "FPS 60"	"fps_max 60"
+		"4" "自定义数值" "messagemode fps_max"
+	}
+}
+"6" "更换地图"
+{
+	
+	"1" "常规地图"
+  	{ 
+         "1" "de_dust2" "changelevel de_dust2;rcon changelevel de_dust2"
+         "2" "de_train" "changelevel de_train;rcon changelevel de_train"
+         "3" "de_cbble" "changelevel de_cbble;rcon changelevel de_cbble"
+	 "4" "de_inferno" "changelevel de_inferno;rcon changelevel de_inferno"
+	 "5" "de_nuke" "changelevel de_nuke;rcon changelevel de_nuke"
+         "6" "de_cpl_mill" "changelevel de_cpl_mill;rcon changelevel de_cpl_mill"
+	 "7" "de_cpl_fire" "changelevel de_cpl_fire;rcon changelevel de_cpl_fire"
+         "8" "cs_bloodstrike" "changelevel cs_bloodstrike;rcon changelevel cs_bloodstrike"
+         "9" "fy_iceworld" "changelevel fy_iceworld;rcon changelevel fy_iceworld"  
+          }
+	"2" "输入地图名称"	"messagemode changelevel"
+}
+"7" "DEMO菜单"
+{
+	"1" "录制DEMO" "messagemode record"
+	"2" "停止录制DEMO" "stop"
+	"3" "播放DEMO" "messagemode viewdemo"
+        "4" "以4*速/正常速度播放" "fw2"
+        "5" "以2*速/正常速度播放" "fastforward" 
+        "6" "暂停/正常播放" "pauser"                              
+        "7" "以1/2慢速/正常速度播放" "slowmotion"  
+        "8" "以1/4慢速/正常速度播放" "sw2"
+}
+"8" "AMXMODX菜单" "say menu"
+
+}
+"9" "退出"

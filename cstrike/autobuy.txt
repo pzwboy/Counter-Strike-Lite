@@ -1,0 +1,14 @@
+m4a1
+ak47
+famas
+galil
+p90
+mp5
+
+primammo
+secammo
+
+defuser
+
+vesthelm
+vest

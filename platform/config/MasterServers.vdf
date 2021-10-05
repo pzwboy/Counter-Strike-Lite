@@ -1,0 +1,21 @@
+"MasterServers"
+{
+	"hl1"
+	{
+		"0"
+		{
+			"addr"		"ms1.csmzdh.com:27010"
+		}
+		"1"
+		{
+			"addr"		"ms2.csmzdh.com:27010"
+		}
+		"2"
+		{
+			"addr"		"ms3.csmzdh.com:27010"
+		}
+	}
+	"rdkf"
+	{
+	}
+}

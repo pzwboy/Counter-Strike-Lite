@@ -1,0 +1,7 @@
+s_refgain 0.4
+s_refdelay 4
+s_occfactor 0.25
+s_verbwet 0.25
+s_distance 60
+
+exec autoexec.cfg
